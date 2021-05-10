@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import { GlobalStyle } from "./components/globalStyle"
 import Home from "./pages/Home"
-import SingInPage from "./pages/SignInPage"
+import SignInPage from "./pages/SignInPage"
 
 const App = () => {
   return (
@@ -11,7 +11,8 @@ const App = () => {
       <GlobalStyle />
       <ScrollToTop />
       <Switch>
-        <Route  path="/" component={Home} />
+        <Route exact path="/sign-in" component={SignInPage} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   )

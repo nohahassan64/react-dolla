@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa'
-import { Link as LinkR } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const SidebarContainer = styled.div`
@@ -58,7 +58,7 @@ export const SidebarBtnWrap = styled.div`
     display: flex;
     justify-content: center;
 `;
-export const SidebarRouter = styled(LinkR)`
+export const SidebarRouter = styled(Link)`
    text-decoration: none;
     color: #010606;
     background: #01bf71;

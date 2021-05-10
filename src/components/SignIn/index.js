@@ -2,7 +2,7 @@ import React from 'react'
 import { SingContainer , FormWrap , Icon , FormContent , 
     Form , FormH1 , FormLabel , FormInput , FormButton , Text } from './SignInStyle'
 
-const SingIn = () => {
+const SignIn = () => {
     return (
         <>
         <SingContainer>
@@ -10,7 +10,7 @@ const SingIn = () => {
                 <Icon to="/">dolla</Icon>
                 <FormContent>
                     <Form action="#">
-                        <FormH1>Sing in to your account</FormH1>
+                        <FormH1>Sign in to your account</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>
                         <FormInput type="email" required />
                         <FormLabel htmlFor='for'>Password</FormLabel>
@@ -26,4 +26,4 @@ const SingIn = () => {
     )
 }
 
-export default SingIn
+export default SignIn
