@@ -8,12 +8,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <GlobalStyle />
-      <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/sing-in" component={SingInPage} /> 
-        </Switch>        
-      </div> 
+      <Home />
     </BrowserRouter>
   )
 }
