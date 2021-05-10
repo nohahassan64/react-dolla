@@ -11,8 +11,8 @@ const App = () => {
       <GlobalStyle />
       <ScrollToTop />
       <Switch>
-        <Route exact path="/sign-in" component={SignInPage} />
-        <Route exact path="/" component={Home} />
+        <Route  path="/sign-in" component={SignInPage} />
+        <Route  path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   )
