@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../globalStyle'
-import { InfoContainer , InfoWrapper , InfoRow , InfoColumn1 , TextWrapper , TopLine , Heading , Subtitle , BtnWrap , InfoColumn2 , ImgWrap ,Img} from './InfoStyle'
+import { InfoContainer , InfoWrapper , InfoRow , InfoColumn1 , TextWrapper , TopLine ,
+     Heading , Subtitle , BtnWrap , InfoColumn2 , ImgWrap ,Img} from './InfoStyle'
 
 const InfoSection = ({
     lightBg,
@@ -13,9 +14,7 @@ const InfoSection = ({
     description,
     buttonLabel,
     img,
-    alt,
-    primary,
-    dark
+    alt
 }) => {
     return (
         <InfoContainer lightBg={lightBg} id={id}>
@@ -27,7 +26,8 @@ const InfoSection = ({
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darktText={darktText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'
+                                <Button 
+                                 to='home'
                                  smooth={true}
                                  duration={500}
                                  spy={true}
@@ -35,7 +35,9 @@ const InfoSection = ({
                                  offset={-20}
                                 primary="true"
                                 dark="true"
-                                >{buttonLabel}</Button>
+                                >
+                                    {buttonLabel}
+                                </Button>
                             </BtnWrap>
                         </TextWrapper>
                     </InfoColumn1>

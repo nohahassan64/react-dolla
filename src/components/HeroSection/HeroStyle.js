@@ -27,7 +27,7 @@ export const HeroContainer = styled.div`
             180deg,
             rgba(0 , 0 , 0 , .2) 0% ,
             transparent 100%
-        )
+        );
     }
 `;
 export const HeroBg = styled.div`

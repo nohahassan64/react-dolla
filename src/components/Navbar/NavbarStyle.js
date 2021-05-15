@@ -7,12 +7,12 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     height: 80px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     background: ${({scrollNav}) => scrollNav ? '#000' : 'transparent'};
     font-size: 1rem;
     z-index: 10;
-    margin-top: -80px;
     @media screen and (max-width: 960px) {
         transition: all .5s ease-in-out
 }

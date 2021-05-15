@@ -1,6 +1,6 @@
 import React  , { useState , useEffect }from 'react'
 import { FaBars } from 'react-icons/fa'
-import {animateScroll as scroll } from 'react-scroll'
+import { animateScroll  } from 'react-scroll'
 import { Nav , NavbarContainer , NavLogo , MobileIcon
      , NavMenu , NavItem , NavLinks , NavBtn , NavBtnLink } from './NavbarStyle'
 
@@ -17,7 +17,7 @@ const Navbar = ({toggle}) => {
         window.addEventListener('scroll' , changeNav)
     } , []);
     const toggleHome = () => {
-        scroll.scrollToTop();
+        animateScroll.scrollToTop();
     }
     return (
         <>
@@ -41,31 +41,40 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover"
+                            <NavLinks 
+                             to="discover"
                              smooth={true}
                              duration={500}
                              spy={true}
                              exact="true"
                              offset={-80}
-                             >Discover</NavLinks>
+                             >
+                                 Discover
+                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="services"
+                            <NavLinks 
+                             to="services"
                              smooth={true}
                              duration={500}
                              spy={true}
                              exact="true"
                              offset={-80}
-                             >Services</NavLinks>
+                             >
+                                 Services
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="sign-up"
+                            <NavLinks 
+                             to="sign-up"
                              smooth={true}
                              duration={500}
                              spy={true}
                              exact="true"
                              offset={-80}
-                             >Sign Up</NavLinks>
+                             >
+                                 Sign Up
+                            </NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

@@ -10,8 +10,6 @@ export const HomeObjOne = {
     imgStart: false,
     img: require('../../images/01.svg').default,
     alt: 'Car',
-    primary: true,
-    dark: true,
     darkText: false
 };
 export const HomeObjTwo = {
@@ -26,8 +24,6 @@ export const HomeObjTwo = {
     imgStart: true,
     img: require('../../images/02.svg').default,
     alt: 'Piggybank',
-    primary: false,
-    dark: false,
     darkText: true
 };
 export const HomeObjThree = {
@@ -42,7 +38,5 @@ export const HomeObjThree = {
     imgStart: false,
     img: require('../../images/03.svg').default,
     alt: 'Paper',
-    primary: false,
-    dark: false,
     darkText: true
 };
